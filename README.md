@@ -20,6 +20,20 @@ labels already provided in the dataset. Hinton et al., 2015 introduced the conce
 
 ![Screenshot 2022-09-15 150327](https://user-images.githubusercontent.com/56751947/195371687-5ade5c5b-7883-4a77-916d-57bff74f9bc7.jpg)
 
+
+# KNOWLEDGE DISTILLATION ON BRAIN TUMOR DATA SET
+
+## Teacher Model
+The teacher model was trained with `4,052,133 parameters` and gave an accuracy of `89.56%`
+**EfficientNetB0** Model architecture was used for the same
+
+![Screenshot 2022-10-15 061139](https://user-images.githubusercontent.com/56751947/195988232-056b87b5-ed7d-46fe-a369-f2014d7e1524.jpg)
+
+## Student Model
+The student model was trained with `295,690 parameters` and gave an accuracy of `89.99%` after compiling and running it on a **Student Network Distiller**
+
+![Screenshot 2022-10-15 061543](https://user-images.githubusercontent.com/56751947/195988388-80b015f5-2895-4a3d-bc42-fc533d69b27f.jpg)
+
 # Conclusion
 
 Knowledge Distillation can compress a deep CNN while maintaining the acciracy so that it can be deployed on embedded systems that have less storage and compuattional power. By distilling knowledge from a Teacher Network having 1M parameters to a Student Network having only 0.313M parameters, we were able to achieve almost the same accuracy.
